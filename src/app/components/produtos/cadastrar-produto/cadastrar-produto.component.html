@@ -1,1 +1,31 @@
-<p>cadastrar-produto works!</p>
+<div>
+  <label for="nome">Nome do Produto</label>
+<input
+  type="text"
+  class="form-control"
+  placeholder="Digite o nome do Produto"
+  name="nomeProduto"
+  [(ngModel)]="nome"
+/>
+<input
+  type="date"
+  class="form-control"
+  name="validade"
+  [(ngModel)]="validade"
+/>
+<input
+  type="number"
+  class="form-control"
+  placeholder="0.00"
+  name="preco"
+  [(ngModel)]="preco"
+/>
+
+<button  class="btn btn-sucess float-right" (click)="salvarProduto()">Salvar</button>
+</div>
+
+<div class="card mt-3">
+  <p>Nome: {{nome}}</p>
+  <p>Validade: {{validade}}</p>
+  <p>Preço: {{preco}}</p>
+</div>

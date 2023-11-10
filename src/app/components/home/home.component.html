@@ -1,19 +1,38 @@
 <h1>Seja bem vindo ao curso de Angular</h1>
 <h4 class="text-danger"> {{ anuncio }} </h4>
+<app-card-produto
+foto="https://nolae.eu/cdn/shop/products/ateez-the-world-ep2-outlaw-nolae-421420_1200x1200.jpg?v=1684312595"
+nomeProduto="ATEEZ"
+[promocao]="false"
+[idProduto]="idProduto"
+[dataValidade]="dataValidade"
+[precoProduto]="precoProduto"
+></app-card-produto>
 
-<div class="card" style="width: 18rem;">
-  <img [src]="foto" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">
-      {{ nomeProduto | uppercase }}
-      <span *ngIf="promocao;else elseBlock" class="badge badge-success">Promoção</span>
-      <ng-template #elseBlock>
-        <span class="badge badge-primary">Aproveite</span>
-      </ng-template>
-    </h5>
-    <p class="card-text">Identificação: {{ idProduto | number:'2.0-0' }} <br>
-      Validade: {{dataValidade | date: "shortDate"}}
-    </p>
-    <a href="#" class="btn btn-primary float-rigth"> {{ precoProduto | currency:"BRL" }}</a>
-  </div>
-</div>
+<app-card-produto
+foto="https://m.media-amazon.com/images/I/81QdBnX+HnL._UF1000,1000_QL80_.jpg"
+nomeProduto="NEWJEANS"
+[promocao]="false"
+[idProduto]="idProduto"
+[dataValidade]="dataValidade"
+[precoProduto]="precoProduto"
+></app-card-produto>
+
+<app-card-produto
+foto="https://www.xantilly.com.br/cdn/shop/files/8c152bed-e9d9-445d-aa30-46bf9c321d2c.jpg?v=1685645221"
+nomeProduto="STRAY KIDS"
+[promocao]="false"
+[idProduto]="idProduto"
+[dataValidade]="dataValidade"
+[precoProduto]="precoProduto"
+></app-card-produto>
+
+<app-card-produto
+foto="https://i.pinimg.com/originals/61/84/cf/6184cf36ed4dd5da43036d25c3d6b1b4.jpg"
+nomeProduto="TAEYEON"
+[promocao]="false"
+[idProduto]="idProduto"
+[dataValidade]="dataValidade"
+[precoProduto]="precoProduto"
+></app-card-produto>
+
