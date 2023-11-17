@@ -1,0 +1,11 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome":"K-RIZE",
+      "validade": "2030-12-31",
+      "precoProduto": 10000
+
+    }
+  ]
+}
