@@ -14,9 +14,7 @@ export class ListarProdutosComponent implements OnInit {
 
   listaProdutos: IProduto[] = [];
 
-  constructor(private produtosService: ProdutosService) {
-
-  };
+  constructor(private produtosService: ProdutosService) {};
 
   ngOnInit(): void {
     this.carregarProdutos();
