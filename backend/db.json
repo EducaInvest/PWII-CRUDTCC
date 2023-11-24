@@ -1,11 +1,10 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "nome":"Album Ateez",
-      "validade": "2030-12-31",
-      "precoProduto": 10000
-
+      "nome": "Produto",
+      "validade": "2023-11-02",
+      "precoProduto": 100,
+      "id": 2
     }
   ]
 }
