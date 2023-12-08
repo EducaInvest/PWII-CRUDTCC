@@ -12,13 +12,13 @@ import { ProdutosService } from 'src/app/services/produtos.service';
 export class CadastrarProdutoComponent implements OnInit {
 
   produto: IProduto = {
-    nome:'',
-    validade: new Date(),
-    precoProduto: 0
+    nomeProjeto:'',
+    publicacao: new Date(),
+    nomeAutor: ''
   };
 
   constructor(private produtosServices:ProdutosService, private router: Router) {
-    
+
    }
 
   ngOnInit(): void {}
@@ -28,7 +28,7 @@ export class CadastrarProdutoComponent implements OnInit {
       this.produto = retorno;
       this.produtosServices.exibirMensagem(
         'Sistem',
-        `${this.produto.nome} foi cadastrado com sucesso. ID: ${this.produto.id}`, 'toast-success'
+        `${this.produto.nomeProjeto} foi cadastrado com sucesso. ID: ${this.produto.id}`, 'toast-success'
       );
       this.router.navigate(['/produtos']);
     });

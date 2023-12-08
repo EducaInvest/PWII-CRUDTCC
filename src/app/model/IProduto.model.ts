@@ -1,6 +1,6 @@
 export interface IProduto {
   id?: number;
-  nome: string;
-  validade: Date;
-  precoProduto: number;
+  nomeProjeto: string;
+  publicacao: Date;
+  nomeAutor: string;
 }

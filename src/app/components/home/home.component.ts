@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit
   promocao: boolean = false;
   foto:string = 'assets/img/crud.png';
   dataValidade = "2021-12-31"
-  
+
 
   constructor(){}
 

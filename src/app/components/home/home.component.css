@@ -1,0 +1,24 @@
+::ng-deep body{
+  background-color: #262626;
+}
+
+.div-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 105px;
+}
+
+.card{
+  height: 319px;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.card p{
+  margin-top: 10px;
+}
+
+.card h1{
+  font-size: 25px;
+}

@@ -12,9 +12,9 @@ import { ProdutosService } from 'src/app/services/produtos.service';
 export class AtualizarProdutoComponent implements OnInit {
 
   produto: IProduto = {
-    nome: '',
-    validade: new Date(),
-    precoProduto: 0
+    nomeProjeto: '',
+    publicacao: new Date(),
+    nomeAutor: ''
   };
 
   constructor(private produtosServices: ProdutosService, private router: Router, private activateRouter: ActivatedRoute) {
@@ -32,7 +32,7 @@ export class AtualizarProdutoComponent implements OnInit {
       this.produto = retorno;
       this.produtosServices.exibirMensagem(
         'Sistem',
-        `${this.produto.nome} foi atualizado com sucesso!`, 'toast-success'
+        `${this.produto.nomeProjeto} foi atualizado com sucesso!`, 'toast-success'
       );
       this.router.navigate(['/produtos']);
     });
